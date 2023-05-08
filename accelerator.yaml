@@ -6,30 +6,24 @@ accelerator:
   - spring
   - banking
   - tanzu-banking-demo
-
   options:
-  
-         
   - name: gitRepo
     label: Git repo
     inputType: text
     required: true
     dataType: string
     defaultValue: https://github.com/MoSehsah/bank-demo
-    
   - name: parentApp
     label: Name of parent application (the Big A app)
     description: Name of the parent application this component is a part of
     inputType: text
     dataType: string
     defaultValue: banking-demo
-
   - name: pkgName
     label: Package name
     inputType: text
     defaultValue: "com.vmware.tanzu"
     required: true
-
   - name: javaVersion
     label: Java version
     inputType: radio
@@ -41,7 +35,6 @@ accelerator:
       - value: 17
         text: 17
     required: true
-
   - name: springBootVersion
     label: Spring Boot version
     inputType: select
@@ -52,7 +45,6 @@ accelerator:
       text: 2.6.9
     defaultValue: "2.6.9"
     required: true
-
   - name: namespaceToDeploy
     label: Namespace to deploy
     description: Please type the namespace to deploy
@@ -74,14 +66,12 @@ accelerator:
     display: true
     dataType: boolean
     defaultValue: false
-
   - name: containterRegistryURL
     label: Container Registry URL for Tiltfile
     description: Please type the URL
     inputType: text
     dataType: string
     defaultValue: harbor.dorn.gorke.ml/tap
-
   - name: k8sContextName
     label: Kubernetes Context Name for Tiltfile
     description: Please type the context name
@@ -95,7 +85,6 @@ accelerator:
     display: true
     dataType: boolean
     defaultValue: false
-
   - name: deployOtel
     label: Deploy OpenTelemetry Operator?
     dependsOn:
