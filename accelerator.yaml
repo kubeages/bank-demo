@@ -12,7 +12,7 @@ accelerator:
     inputType: text
     required: true
     dataType: string
-    defaultValue: https://github.com/MoSehsah/bank-demo
+    defaultValue: https://github.com/kubeages/bank-demo
   - name: parentApp
     label: Name of parent application (the Big A app)
     description: Name of the parent application this component is a part of
